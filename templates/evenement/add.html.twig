@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(eventForm) }}
+
+        {{ form_widget(eventForm.libelle) }}
+        {{ form_widget(eventForm.dateDebut) }}
+        {{ form_widget(eventForm.dateFin) }}
+
+        <button type="submit">Envoyer</button>
+
+    {{ form_end(eventForm) }}
+{% endblock %}
+
+{% block title %}
+ADD Evenement
+{% endblock %}
+
